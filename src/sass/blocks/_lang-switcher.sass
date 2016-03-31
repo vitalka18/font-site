@@ -1,0 +1,25 @@
+.lang-switcher
+  display: inline-block
+  +clr
+  border: 1px solid $base-grey
+  border-radius: 5px
+.lang-switcher__name
+  display: block
+  float: left
+  border-radius: 5px
+.lang-switcher__btn
+  display: block
+  padding: 2px 5px
+  border-radius: 4px
+  background: #fff
+  text-decoration: none
+  color: $base-grey
+  transition: color .3s ease, background .3s ease
+  &:hover,
+  &:active,
+  &:focus
+    color: $dark
+  &.lang-switcher__btn_active
+    color: #fff
+    background: $base-grey
+

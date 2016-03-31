@@ -1,0 +1,58 @@
+.font-list
+  margin-right: 10px
+  padding-bottom: 30px
+
+.font-list_detaile
+  padding-top: 10px
+  padding-bottom: 0
+  border-top: 6px solid $filter-top-border-color
+  .font-list__item
+    margin-bottom: 15px
+    padding-bottom: 0
+    border-bottom: none
+
+.font-list__item
+  margin-bottom: 10px
+  padding: 0 0 25px
+  border-bottom: 1px solid $separator-color
+
+.font-list__header
+  +clr
+
+.font-list__header-left
+  float: left
+
+.font-list__header-right
+  float: right
+  text-align: right
+  >*
+    display: inline-block
+    vertical-align: middle
+
+.font-list__name,
+.font-list__name a
+  font-size: 14px
+  color: $dark
+
+.font-list__example
+  margin: 25px 0 40px
+  overflow: hidden
+  img
+    max-width: initial
+
+.font-list__name_size_lg,
+.font-list__name_size_lg a
+  font-size: 40px
+  color: $dt-base_color
+
+.font-list__created
+  font-size: 14px
+
+.mark
+  color: $dt-base_color
+
+@media screen and (max-width: $break-phone)
+  .font-list__header-left 
+    margin-top: 40px
+  .font-list
+    margin-right: 0

@@ -1,0 +1,126 @@
+<div class="font-filter">
+  <form class="form font-filter__form">
+    <div class="font-filter__left">
+      <div class="form-item font-filter__search">
+        <input type="search" class="form-field" placeholder="Enter your own text">
+      </div>
+
+      <div class="btn-group font-filter__pangrams">
+        <button type="button" class="btn" data-toggle="dropdown" data-jq-dropdown="#jq-dropdown-2" aria-haspopup="true" aria-expanded="false">
+          Pangrams <span class="fa fa-sort-desc"></span>
+        </button>
+        <div id="jq-dropdown-2" class="dropdown-menu dropdown-menu_pangram jq-dropdown jq-dropdown-tip">
+          <div class="dropdown-menu_pangram_col_2">
+            <ul class="pangram-list">
+              <li class="pangram-list__item"><a class="link link_hover_black" href="#">Basic text </a></li>
+              <li class="pangram-list__item"><a class="link link_hover_black" href="#">Font names</a></li>
+              <li class="pangram-list__item"><a class="link link_hover_black" href="#">AaBbCc…</a></li>
+              <li class="pangram-list__item"><a class="link link_hover_black" href="#">АаБбВв...</a></li>
+              <li class="pangram-list__item"><a class="link link_hover_black" href="#">ABCDE…</a></li>
+              <li class="pangram-list__item"><a class="link link_hover_black" href="#">АБВГД...</a></li>
+              <li class="pangram-list__item"><a class="link link_hover_black" href="#">abcde…</a></li>
+              <li class="pangram-list__item"><a class="link link_hover_black" href="#">абвгд...</a></li>
+              <li class="pangram-list__item"><a class="link link_hover_black" href="#">0123456789</a></li>
+              <li class="pangram-list__item"><a class="link link_hover_black" href="#">The quick brown fox…</a></li>
+              <li class="pangram-list__item"><a class="link link_hover_black" href="#">Съешь еще этих...</a></li>
+              <li class="pangram-list__item"><a class="link link_hover_black" href="#">Lorem ipsum…</a></li>
+              <li class="pangram-list__item"><a class="link link_hover_black" href="#">ff fi fl ffi ffl st ct</a></li>
+              <li class="pangram-list__item"><a class="link link_hover_black" href="#">Punctuation</a></li>
+            </ul>
+          </div>
+          <div class="dropdown-menu_pangram_col_2">
+            <ul class="pangram-list">
+              <li class="pangram-list__item"><a class="link link_hover_black" href="#">Pangrams</a></li>
+              <li class="pangram-list__item"><a class="link link_hover_black" href="#">Русский (Russian)</a></li>
+              <li class="pangram-list__item"><a class="link link_hover_black" href="#">English</a></li>
+              <li class="pangram-list__item"><a class="link link_hover_black" href="#">Français (French)</a></li>
+              <li class="pangram-list__item"><a class="link link_hover_black" href="#">Deutsch (German)</a></li>
+              <li class="pangram-list__item"><a class="link link_hover_black" href="#">Italian</a></li>
+              <li class="pangram-list__item"><a class="link link_hover_black" href="#">Español (Spanish)</a></li>
+              <li class="pangram-list__item"><a class="link link_hover_black" href="#">Greek (Monotonic)</a></li>
+              <li class="pangram-list__item"><a class="link link_hover_black" href="#">Latin</a></li>
+              <li class="pangram-list__item"><a class="link link_hover_black" href="#">Esperanto</a></li>
+              <li class="pangram-list__item"><a class="link link_hover_black" href="#">Polski (Polish)</a></li>
+              <li class="pangram-list__item"><a class="link link_hover_black" href="#">Romanian</a></li>
+              <li class="pangram-list__item"><a class="link link_hover_black" href="#">Slovak</a></li>
+              <li class="pangram-list__item"><a class="link link_hover_black" href="#">Turkish</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="font-filter__right">
+      <div class="wrap_xs_block ib">
+      <div class="font-filter__range">
+        <div class="range-min"><span class="icon-label-min"></span></div>
+        <div class="range">
+          <input type="text" class="js-font-size-range" data-type="single" data-min="10" data-max="144" data-from="50"
+        data-step="1" data-hide-min-max="true" readonly>  
+        </div>
+        <div class="range-max"><span class="icon-label-max"></span></div>
+      </div>
+
+      <label class="form-checkbox">
+        <input type="checkbox" name="Fittowidth" id="Fittowidth">
+        <span class="checkbox"></span>
+        Fit to width
+      </label>
+      </div>
+
+      <div class="font-filter__colorpicker">
+        <div class="btn-group">
+          <a href="#" data-jq-dropdown="#jq-dropdown-color">
+            <div class="color-picker">
+              <div id="bgColorPickerInput" class="color-picker__bg" data-color="#fff"></div>
+              <div id="fontColorPickerInput" class="color-picker__color" data-color="#000"></div>
+            </div>
+            <span class="fa fa-sort-desc"></span>
+          </a>
+
+          <div id="jq-dropdown-color" class="dropdown-menu dropdown-menu_color jq-dropdown jq-dropdown-tip">
+            <ul class="color-set">
+              <li class="color-set__item"><a class="link link_hover_black active" href="#bgPicker">Font color</a></li>
+              <li class="color-set__item"><a class="link link_hover_black" href="#ColorPicker">Background color</a></li>
+            </ul>
+            <div class="js-color-wrap">
+              <div id="bgPicker" class="js-color-picker active"><input type='text' id="fontColorPicker" ></div>
+              <div id="ColorPicker" class="js-color-picker"><input type='text' id="bgColorPicker" ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="btn-group ib">
+        <a href="#" class="link_hb" data-jq-dropdown="#jq-dropdown-hb">
+          <span class="icon-hb"></span>
+          <span class="fa fa-sort-desc"></span>
+        </a>
+        <div id="jq-dropdown-hb" class="dropdown-menu dropdown-menu_column_one jq-dropdown jq-dropdown-tip">
+          <ul class="pangram-list">
+            <li class="pangram-list__item">
+              <label class="form-checkbox">
+                <input type="checkbox" name="Ordinals" id="Ordinals">
+                <span class="checkbox"></span>
+                Ordinals
+              </label>
+            </li>
+
+            <li class="pangram-list__item">
+              <label class="form-checkbox">
+                <input type="checkbox" name="Ligatures" id="Ligatures">
+                <span class="checkbox"></span>
+                Standard Ligatures
+              </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <label class="form-checkbox">
+        <input type="checkbox" name="FontImages" id="FontImages">
+        <span class="checkbox"></span>
+        Font Images
+      </label>
+    </div>
+  </form>
+</div>

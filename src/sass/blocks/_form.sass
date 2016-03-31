@@ -1,0 +1,241 @@
+.form-field,
+.form-field[type="search"]
+  box-sizing: border-box
+  height: 28px
+  width: 100%
+  border: 1px solid $field-border-color
+  color: $field-text-color
+  font-size: 16px 
+  line-height: 1.2
+  padding: 4px 6px
+
+.font-filter__form
+  +clr
+  padding: 18px 0 15px
+  margin-right: 10px
+  margin-bottom: 15px
+  border-top: 6px solid $filter-top-border-color
+  border-bottom: 1px solid $separator-color
+
+.font-filter__right
+  float: right
+
+.font-filter__left
+  float: left
+
+.font-filter__search
+  float: left
+  margin-right: 10px
+  width: 330px
+
+.font-filter__pangrams
+  float: left
+
+.font-filter__range
+  position: relative
+  top: -2px
+  display: inline-block
+  margin: 0 15px
+  height: 20px
+  width: 120px
+  vertical-align: middle
+  >*
+    position: absolute
+    top: 0
+    bottom: 0
+    margin: auto 0
+
+.irs-line
+  border-radius: 8px
+
+.irs-slider
+  top: 21px
+  width: 16px
+  height: 16px
+  background: #272525
+  border-radius: 50%
+
+.irs-bar
+  background-position: 0 -59px
+
+.irs-bar-edge 
+  background-position: 0 -89px
+
+.irs-single
+  opacity: 0
+  transition: opacity .3s
+
+.irs-from, .irs-to, .irs-single
+  top: 3px
+
+.irs:hover
+  .irs-single
+    opacity: 1
+
+.range-min
+  left: 7px
+  top: 3px
+
+.range-max
+  top: 1px
+  right: 0
+
+.range
+  width: 80px
+  top: -19px
+  left: 0
+  right: 0
+  margin: auto
+
+.font-filter__colorpicker
+  display: inline-block
+  vertical-align: middle
+  margin: 0 0 0 20px
+  .fa
+    position: relative
+    top: -6px
+    margin-left: 5px
+  .jq-dropdown-open
+    .fa
+      top: -2px
+
+.color-picker
+  position: relative
+  display: inline-block
+  width: 20px
+  height: 20px
+  
+.color-picker__bg,
+.color-picker__color 
+  position: absolute
+  width: 20px
+  height: 20px
+  border: 1px solid #a09f9f
+.color-picker__bg
+  right: -5px
+  bottom: -5px
+  background: #fff
+.color-picker__color 
+  top: -5px
+  left: -5px
+  background: #000
+
+.sp-picker-container, .sp-palette-container
+  background: none
+  border: none
+  padding: 0 0 130px 0
+  margin-bottom: -120px
+
+.sp-container
+  border: none
+  background: none
+
+.form-checkbox
+  font-size: 16px
+  cursor: pointer
+  input[type="checkbox"]
+    display: none
+
+.js-color-wrap
+  position: relative
+  height: 140px
+  >*
+    position: absolute
+    top: 0
+    left: 0
+    opacity: 0
+    z-index: -2
+    &.active
+      z-index: 10
+      opacity: 1
+
+input[type="checkbox"]:checked
+  + .checkbox:before
+    width: 8px
+    height: 8px
+
+.checkbox
+  position: relative
+  top: -1px
+  display: inline-block
+  height: 20px
+  width: 20px
+  margin-right: 3px
+  vertical-align: middle
+  background: #fff
+  border-radius: 3px
+  border: 1px solid $field-border-color
+  &:before
+    content: ''
+    position: absolute
+    display: block
+    width: 0px
+    height: 0px
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    margin: auto
+    border-radius: 50%
+    background: #272525
+    transition: width .3s, height .3s
+
+@media screen and (max-width: $break-desctop)
+  .font-filter__right
+    margin-top: 15px
+    float: none
+    text-align: justify
+    &:after
+      display: inline-block
+      content: ''
+      height: 0
+      width: 100%
+
+  .font-filter__range
+    margin-left: 0
+    
+  .font-filter__left
+    float: none
+    +clr
+  .font-filter__pangrams
+    float: right
+
+  .font-filter__search
+    width: 80
+    width: calc(100% - 135px)
+  .font-filter__right
+    > .form-checkbox
+      display: inline-block
+      max-width: 125px
+@media screen and (max-width: $break-tablet)
+  .font-filter__right
+    > .form-checkbox
+      display: inline-block
+      max-width: 125px
+@media screen and (max-width: $break-phone)
+  .font-filter__form
+    margin-right: 0
+  .font-filter__pangrams
+    float: none
+    width: 100%
+    margin-top: 10px
+    .btn
+      width: 100%
+  .font-filter__search
+    width: 100%
+    float: none
+  .dropdown-menu_pangram
+    width: auto
+    width: calc(100% - 15px)
+  .wrap_xs_block
+    display: block
+    margin-bottom: 10px
+    text-align: justify
+    &:after
+      display: inline-block
+      content: ''
+      height: 0
+      width: 100%
+    > .form-checkbox
+      display: inline-block
+      max-width: 125px

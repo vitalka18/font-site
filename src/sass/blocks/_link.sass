@@ -1,0 +1,145 @@
+.link
+  font-size: 1em
+  text-decoration: none
+
+.link_hover_opacity
+  transition: opacity .3s
+  &:hover,
+  &:focus,
+  &:active
+    opacity: .7
+
+.link_nav,
+.link_type_underline
+  position: relative
+  color: $link__nav-color
+  cursor: pointer
+  transition: color .3s ease
+  &:hover,
+  &:focus,
+  &:active,
+  &.link_active,
+  &.link_nav_active
+    color: $link__nav_color_active
+    &:after
+      width: 100%
+  &:after
+    content: ''
+    display: block
+    position: absolute
+    bottom: -2px
+    left: 0
+    width: 0
+    height: 1px
+    background: $link__nav_color_active
+    transition: width .3s ease
+
+.link_type_underline
+  color: $nav__title-color
+  font-size: 18px
+  &:hover,
+  &:focus,
+  &:active,
+  &.link_active,
+  &.link_nav_active
+    color: $dark
+.link_nav-title 
+  color: $nav__title-color
+  font-weight: normal
+  cursor: pointer
+  transition: opacity .3s ease
+  &:hover,
+  &:focus,
+  &:active
+    opacity: .7
+
+.link_social
+  margin-right: 3px
+  font-size: 16px
+  color: $base-grey
+  transition: color .3s ease
+  &:hover,
+  &:focus,
+  &:active
+    color: $dark
+  .fa
+    font-size: 16px
+
+.link_read-more
+  position: relative
+  color: $base-grey
+  transition: rotate .3s
+  .fa
+    position: absolute
+    top: 0
+    right: -12px
+    bottom: 0
+    margin: auto
+    transition: transform .3s ease
+  &:hover,
+  &:focus,
+  &:active,
+  &.link_nav_active
+    color: $base-grey
+    &:after
+      width: 0%
+  &:after
+    content: ''
+    display: block
+    position: absolute
+    bottom: -2px
+    left: 0
+    width: 100%
+    height: 1px
+    border-bottom: 1px dashed $base-grey
+    transition: width .3s ease
+
+.link_read-more_state_open
+  .fa
+    transform: rotate(180deg)
+
+.link_license
+  color: $dt-base_color
+  transition: opacity .3s ease
+  &:hover,
+  &:focus,
+  &:active
+    opacity: .7
+
+.link_wish-list
+  display: inline-block
+  margin: 0 15px
+  vertical-align: middle
+  font-size: 25px
+  transition: all .3s
+  &:hover,
+  &:focus,
+  &:active,
+  &.link_wish-list_status_active
+    color: #222220
+    .fa:before
+      content: "\f004"
+
+.link_black
+  color: $dark
+  &:hover,
+  &:focus,
+  &:active
+    color: $dark
+.link_hover_black
+  &:hover,
+  &:focus,
+  &:active,
+  &.active
+    color: $dark
+.link_hb
+  margin: 0 15px
+  .fa
+    position: relative
+    margin-left: 5px
+  .icon-hb
+    position: relative
+    top: 5px
+@media screen and (max-width: $break-tablet)
+  .link_social
+    font-size: 24px

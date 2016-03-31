@@ -1,0 +1,215 @@
+@import navbar
+@import navigation
+@import nav
+@import link
+@import tag
+@import lang-switcher
+@import img-list
+@import form
+@import btn
+@import font-list
+@import dropdown-menu
+.brand-logo
+  display: block
+  margin: 0 -10px
+  transition: opacity .3s ease 
+  &:hover
+    opacity: .7
+  img
+    max-width: 100%
+
+.font-preview
+  position: relative
+  margin-bottom: 30px
+
+.font-preview__big
+  img
+    width: 100%
+
+.font-preview__small-list
+  position: absolute
+  right: 15px
+  bottom: 10px
+.font-family
+  font-size: 1.15em
+.font-created-info
+.font-created-info__term
+  display: inline-block
+  color: $dt-base_color
+  font-weight: normal
+
+.font-created-info__definition
+  display: inline-block
+  color: $dd-base_color
+.more-info_hidden
+  display: none
+
+.license
+  padding: 0
+  margin: 0
+  //text-align: justify
+  list-style: none
+  // &:after
+  //   content: ''
+  //   display: inline-block
+  //   width: 100%
+  //   height: 0
+.license__item
+  display: inline-block
+  vertical-align: middle
+  font-size: 25px
+  line-height: 1
+  color: $dt-base_color
+  + .license__item
+    margin-left: 15px
+
+.price-block
+  display: inline-block
+  font-size: 16px
+  color: $price-new
+
+.price-block__old
+  display: inline-block
+  color: $price-old
+
+.price-block__new
+  display: inline-block
+  margin-left: 12px
+
+.discount
+  font-size: .8em
+  margin-right: 12px
+
+.tt_line-through
+  text-decoration: line-through
+
+.glyphs
+  display: inline-block
+  position: relative
+  margin: 30px 10px 30px 0
+  &:after,
+  &:before
+    content: ''
+    position: absolute
+    display: block
+    background: #fff
+    z-index: 500
+  &:after
+    width: 100%
+    height: 3px
+    right: 0
+    top: 0px
+  &:before
+    height: 100%
+    width: 3px
+    top: 0
+    left: 0px
+
+.glyphs__inner
+  +clr
+
+.glyphs__item 
+  position: relative
+  height: 82px
+  width: 100px
+  float: left
+  border-left: 2px solid $glyph-border-color
+  border-top: 2px solid $glyph-border-color
+.glyph
+  position: absolute
+  width: auto
+  height: auto
+  max-height: 95%
+  max-width: 95%
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  margin: auto
+
+.waterfall_width_full
+  width: 100%
+
+.waterfall_width_half
+  width: 45%
+
+.waterfall-wrap
+  text-align: justify
+  padding-right: 10px
+  &:after
+    content: ''
+    width: 100%
+    display: inline-block
+    height: 0
+
+.waterfall
+  display: inline-block
+  vertical-align: top
+  margin: 20px 0 50px
+  overflow: hidden
+  img
+    max-width: initial
+
+.waterfall__size
+  margin-bottom: 15px
+  font-size: 14px
+
+@media screen and (max-width: $break-phone)
+  .font-list_detaile
+    margin-right: 0
+
+  .font-list__header-right
+    margin-bottom: 20px
+    float: none
+
+  .price-block
+    display: block
+    margin-bottom: 15px
+
+  .waterfall-wrap
+    padding-right: 0
+
+  .waterfall_width_half
+    width: 100%
+
+  .font-preview__small-list
+    position: static
+    margin-top: 8px
+
+  .img-list__item_size_md
+    width: 30% 
+    height: auto
+
+  .font-preview
+    margin-bottom: 20px
+
+.color-set
+  padding: 0
+  margin: 0 0 14px
+  list-style: none
+.color-set__item
+  display: inline-block
+  font-size: 14px
+  .link_hover_black
+    position: relative
+    &:hover,
+    &:focus,
+    &:active,
+    &.active
+      color: #000
+      &:after
+        width: 100%
+    &:after
+      content: ''
+      display: block
+      position: absolute
+      bottom: -2px
+      left: 0
+      width: 0
+      height: 1px
+      background: $link__nav_color_active
+      transition: width .3s ease
+.color-set__item:not(:first-child)
+  margin-left: 10px
+  
+

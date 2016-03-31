@@ -1,0 +1,98 @@
+.navbar
+  width: 330px
+  height: 100vh
+  padding: 44px 20px 20px 80px
+  overflow-y: auto
+.navbar_position_fixed
+  position: fixed
+  top: 0
+  left: 0 
+.navbar__brand
+  margin-bottom: 35px
+.navbar-body
+  display: block
+.navbar__social
+  margin: 35px 0
+.navbar__tags
+  margin: 0
+.navbar__switcher
+  margin: 90px 0 20px
+.navbar__copy
+  margin: 20px 0 0
+.flexbox 
+  .navbar
+    display: flex
+    flex-direction: column
+    align-content: space-around
+.btn-open-menu
+  display: none
+  position: relative
+  margin-top: 13px
+  width: 42px
+  height: 20px
+  padding: 0
+  border: none
+  background: none
+  transition: opacity .3s ease 
+  &:hover
+    opacity: .7 
+.btn-open-menu_state_open
+  .btn-open-menu__el
+    &.btn-open-menu__el_1
+      transform: rotate(45deg)
+      top: -8px
+      left: 0px
+    &.btn-open-menu__el_2
+      width: 0%
+      opacity: 0
+    &.btn-open-menu__el_3
+      transform: rotate(-45deg)
+      top: 22px
+      left: 0px
+.btn-open-menu__el
+  display: block
+  position: absolute
+  left: 0
+  height: 2px
+  width: 100%
+  background: $btn-open-menu__el_color
+  opacity: 1
+  transform: rotate(0deg)
+  transition: .25s ease-in-out
+  &.btn-open-menu__el_1
+    top: 0px
+    transform-origin: left center
+  &.btn-open-menu__el_2
+    top: 8px
+    transform-origin: left center
+  &.btn-open-menu__el_3
+    top: 16px
+    transform-origin: left center
+@media screen and (max-width: $break-tablet)
+  .btn-open-menu
+    display: block
+  .navbar 
+    height: auto
+    width: 100%
+    padding: 0px 65px 0px
+  .navbar__copy
+    margin-bottom: 20px 
+  .navbar_position_fixed
+    position: static
+  .navbar-body
+    display: none
+    font-size: 1.5em
+  .navbar__brand
+    +clr
+    padding: 25px 0
+    margin: 0
+    img
+      height: 100%
+      width: auto
+  .brand-logo
+    height: 45px
+    float: left
+  .navbar-open
+    float: right
+
+    

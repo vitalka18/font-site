@@ -1,0 +1,35 @@
+.dropdown-menu
+  +clr
+  padding: 10px 15px
+  border: 1px solid $dropdown-border-color
+  border-radius: 3px
+  background: $dropdown-bg
+  &:before,
+  &:after
+    display: none !important
+
+.pangram-list
+  paddin: 0
+  margin: 0
+  list-style: none
+
+.pangram-list__item
+  font-size: 14px
+  + .pangram-list__item
+    margin-top: 5px
+  .form-checkbox
+    font-size: 14px
+
+.dropdown-menu_pangram
+  width: 340px
+
+.dropdown-menu_color
+  width: 220px
+
+.dropdown-menu_pangram_col_2
+  width: 50%
+  float: left
+  padding-right: 10px
+
+.dropdown-menu_column_one
+  width: 170px

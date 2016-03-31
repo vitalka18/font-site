@@ -1,0 +1,83 @@
+.main
+  +clr
+  margin: 0px 0 0px 337.5px
+
+.l-1-to-3-tile
+  +clr
+  padding: 0 7.5px
+
+.l-1-to-3-tile__lg
+  height: 71.4vh
+  height: calc(71.4vh - 15px)
+  margin-bottom: 15px
+  overflow: hidden
+  img
+    min-width: 100%
+    min-height: 100%
+
+.l-1-to-3-tile__list
+  +clr
+  height: 28.6vh
+  margin: 0 -7.5px
+
+.l-1-to-3-tile__sm
+  float: left
+  padding: 0 7.5px
+  height: 100%
+  width: 33.33333333%
+  overflow: hidden
+  img
+    min-width: 100%
+    min-height: 100
+
+.l-row
+  +clr
+
+.l-two-column > *
+  float: left
+  margin-bottom: 20px
+
+.l-column-lg-2
+  width: 22%
+
+.l-column-lg-8
+  width: 78%
+  padding-left: 30px
+@media screen and (max-width: $break-tablet)
+  .l-1-to-3-tile
+    padding: 0
+
+  .main
+    margin-left: 7.5px
+    margin-right: 7.5px
+
+  .l-1-to-3-tile__lg,
+  .l-1-to-3-tile__lg img,
+  .l-1-to-3-tile__list,
+  .l-1-to-3-tile__sm img
+    height: auto
+
+  .l-1-to-3-tile__sm
+    width: 50%
+    &:last-child
+      margin-top: 15px
+      width: 100%
+@media screen and (max-width: 1200px)
+  .l-column-lg-2
+    width: 30%
+
+  .l-column-lg-8
+    width: 70%
+
+@media screen and (max-width: $break-phone)
+  .l-1-to-3-tile__lg
+    margin-bottom: 0
+  .l-1-to-3-tile__sm
+    width: 100%
+    margin-top: 15px
+    &:last-child
+      margin-top: 15px
+  
+  .l-two-column > *
+    width: 100%
+    padding: 0
