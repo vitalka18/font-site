@@ -19,17 +19,33 @@
   +clr
   height: 28.6vh
   margin: 0 -7.5px
-
-.l-1-to-3-tile__sm
-  float: left
+.big-preview-nav,
+.big-preview
+  height: 100%
+  *
+    height: 100%
+  a
+    display: block
+.big-preview__item
+  overflow: hidden
+  height: 100%
+  img
+    min-width: 100%
+    min-height: 100%
+    height: auto
+    width: auto
+.l-1-to-3-tile__sm,
+.big-preview-nav-item
   padding: 0 7.5px
+  float: left
   height: 100%
   width: 33.33333333%
   overflow: hidden
   img
     min-width: 100%
-    min-height: 100
-
+    min-height: 100%
+    height: auto
+    width: auto
 .l-row
   +clr
 
@@ -46,7 +62,10 @@
 @media screen and (max-width: $break-tablet)
   .l-1-to-3-tile
     padding: 0
-
+  .big-preview
+    height: auto
+    *
+      height: auto
   .main
     margin-left: 7.5px
     margin-right: 7.5px
@@ -81,3 +100,7 @@
   .l-two-column > *
     width: 100%
     padding: 0
+  .big-preview__item
+    margin-bottom: 15px
+  .l-1-to-3-tile__list
+    display: none
