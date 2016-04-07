@@ -14,9 +14,12 @@
   img
     min-width: 100%
     min-height: 100%
+    height: auto
+    width: auto
 
 .l-1-to-3-tile__list
   +clr
+  height: 210px
   height: 28.6vh
   margin: 0 -7.5px
 .big-preview-nav,
@@ -51,14 +54,14 @@
 
 .l-two-column > *
   float: left
-  margin-bottom: 20px
-
+.l-two-column:first-child > *
+  margin-bottom: 30px
 .l-column-lg-2
-  width: 22%
+  width: 20%
 
 .l-column-lg-8
-  width: 78%
-  padding-left: 30px
+  width: 70%
+  padding-left: 25px
 @media screen and (max-width: $break-tablet)
   .l-1-to-3-tile
     padding: 0

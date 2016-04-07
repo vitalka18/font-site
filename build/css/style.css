@@ -195,11 +195,13 @@ p { margin-bottom: 15px; }
 
 .hide { display: none; }
 
-.title { margin-bottom: 1em; }
+.title { margin-bottom: 1em; font-size: 16px; font-weight: normal; color: #000; }
 
 small { color: #b1b1b1; font-size: 0.7em; font-weight: normal; }
 
-.navbar { width: 330px; height: 100vh; padding: 44px 20px 20px 80px; overflow-y: auto; }
+.mb-xs { margin-bottom: 5px; }
+
+.navbar { width: 330px; height: 100%; height: 100vh; padding: 44px 20px 20px 80px; overflow-y: scroll; overflow-y: auto; overflow-x: hidden; }
 
 .navbar_position_fixed { position: fixed; top: 0; left: 0; }
 
@@ -281,7 +283,7 @@ small { color: #b1b1b1; font-size: 0.7em; font-weight: normal; }
 .link_hb { margin: 0 15px; }
 .link_hb .fa { position: relative; margin-left: 5px; }
 .link_hb .icon-hb { position: relative; top: 5px; }
-.tag__font-name { display: inline-block; margin: 0 1px 7px 0; padding: 0 5px 2px; border: 1px solid #b1b1b1; -webkit-border-radius: 0.4em; -moz-border-radius: 0.4em; border-radius: 0.4em; text-decoration: none; color: #b1b1b1; line-height: 1; -webkit-transition: color 0.3s ease, background 0.3s ease; -moz-transition: color 0.3s ease, background 0.3s ease; -o-transition: color 0.3s ease, background 0.3s ease; transition: color 0.3s ease, background 0.3s ease; }
+.tag__font-name { display: inline; margin: 0 2px 0 0; padding: 2px 5px; border: 1px solid #b1b1b1; -webkit-border-radius: 0.4em; -moz-border-radius: 0.4em; border-radius: 0.4em; text-decoration: none; color: #b1b1b1; line-height: 2; vertical-align: baseline; white-space: nowrap; -webkit-transition: color 0.3s ease, background 0.3s ease; -moz-transition: color 0.3s ease, background 0.3s ease; -o-transition: color 0.3s ease, background 0.3s ease; transition: color 0.3s ease, background 0.3s ease; }
 .tag__font-name:hover, .tag__font-name:active, .tag__font-name:focus, .tag__font-name.tag__font-name_active { color: #fff; background: #b1b1b1; }
 
 .lang-switcher { display: inline-block; *zoom: 1; border: 1px solid #b1b1b1; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; }
@@ -426,13 +428,21 @@ input[type="checkbox"]:checked + .checkbox:before { width: 8px; height: 8px; }
 .brand-logo:hover { opacity: 0.7; }
 .brand-logo img { max-width: 100%; }
 
-.font-preview { position: relative; margin-bottom: 30px; }
+.font-preview { position: relative; margin-bottom: 25px; }
 
-.font-preview__big img { width: 100%; }
+.font-preview__big { overflow: hidden; }
+.font-preview__big img { min-width: 100%; max-height: 520px; }
+
+input:-webkit-input-placeholder { text-align: center; }
 
 .font-preview__small-list { position: absolute; right: 15px; bottom: 10px; }
 
 .font-family { font-size: 1.15em; }
+
+.font-family-nav { height: 76px; }
+.font-family-nav img { max-height: 100%; height: 76px; }
+
+.font-family__info { padding: 0 5px; }
 
 .font-created-info__term { display: inline-block; color: #b1b1b0; font-weight: normal; }
 
@@ -495,9 +505,9 @@ input[type="checkbox"]:checked + .checkbox:before { width: 8px; height: 8px; }
 .l-1-to-3-tile:after { content: " "; display: table; clear: both; }
 
 .l-1-to-3-tile__lg { height: 71.4vh; height: -webkit-calc(71.4vh - 15px); height: -moz-calc(71.4vh - 15px); height: calc(71.4vh - 15px); margin-bottom: 15px; overflow: hidden; }
-.l-1-to-3-tile__lg img { min-width: 100%; min-height: 100%; }
+.l-1-to-3-tile__lg img { min-width: 100%; min-height: 100%; height: auto; width: auto; }
 
-.l-1-to-3-tile__list { *zoom: 1; height: 28.6vh; margin: 0 -7.5px; }
+.l-1-to-3-tile__list { *zoom: 1; height: 210px; height: 28.6vh; margin: 0 -7.5px; }
 .l-1-to-3-tile__list:after { content: " "; display: table; clear: both; }
 
 .big-preview-nav, .big-preview { height: 100%; }
@@ -513,11 +523,13 @@ input[type="checkbox"]:checked + .checkbox:before { width: 8px; height: 8px; }
 .l-row { *zoom: 1; }
 .l-row:after { content: " "; display: table; clear: both; }
 
-.l-two-column > * { float: left; margin-bottom: 20px; }
+.l-two-column > * { float: left; }
 
-.l-column-lg-2 { width: 22%; }
+.l-two-column:first-child > * { margin-bottom: 30px; }
 
-.l-column-lg-8 { width: 78%; padding-left: 30px; }
+.l-column-lg-2 { width: 20%; }
+
+.l-column-lg-8 { width: 70%; padding-left: 25px; }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
  *{ -webkit-text-size-adjust: none; } }

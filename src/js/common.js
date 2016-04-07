@@ -101,7 +101,8 @@ function homePageSliderInit() {
       fade: true,
       autoplay: true,
       autoplaySpeed: 3000,
-      asNavFor: '.slider-nav'
+      asNavFor: '.slider-nav',
+      adaptiveHeight: true,
     });
   }
   
@@ -113,6 +114,7 @@ function homePageSliderInit() {
       dots: false,
       centerMode: false,
       focusOnSelect: true,
+      adaptiveHeight: true,
       responsive: [
         {
           breakpoint: 991,
@@ -135,6 +137,7 @@ function fontFamilySliderInit() {
       asNavFor: '.font-family-nav',
       autoplay: true,
       autoplaySpeed: 3000,
+      adaptiveHeight: true
     });
   
     $('.font-family-nav').slick({
@@ -143,7 +146,8 @@ function fontFamilySliderInit() {
       asNavFor: '.font-family-preview',
       dots: false,
       centerMode: false,
-      focusOnSelect: true
+      focusOnSelect: true,
+      adaptiveHeight: true
     });
 }
 

@@ -20,18 +20,28 @@
 
 .font-preview
   position: relative
-  margin-bottom: 30px
+  margin-bottom: 25px
 
 .font-preview__big
+  overflow: hidden
   img
-    width: 100%
-
+    min-width: 100%
+    max-height: 520px
+input:-webkit-input-placeholder
+  text-align: center
 .font-preview__small-list
   position: absolute
   right: 15px
   bottom: 10px
 .font-family
   font-size: 1.15em
+.font-family-nav
+  height: 76px
+  img
+    max-height: 100%
+    height: 76px
+.font-family__info
+  padding: 0 5px
 .font-created-info
 .font-created-info__term
   display: inline-block
