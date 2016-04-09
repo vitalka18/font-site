@@ -1,0 +1,184 @@
+.massonry
+  padding: 10px 15px
+  margin: 0 auto
+  overflow: hidden
+.massonry__inner
+  margin: 0 -12.5px
+
+.massonry__block
+  margin: 0 0 15px
+  padding: 0 12.5px
+  float: left
+  width: 33.33333333%
+.blog-artical
+  + clr
+
+.blog-artical__image
+  margin-bottom: 10px
+  transition: opacity .3s
+  &:hover
+    opacity: .7
+  img
+    width: 100%
+    max-width: 100%
+.blog-artical__info
+  font-size: 16px
+
+.blog-artical__title
+  margin-bottom: 0
+
+.blog-artical__detail
+  margin-bottom: 10px
+  font-size: 12px
+  span
+    display: inline-block
+    vertical-align: top
+    + span
+      margin-left: 15px
+.blog-artical__text
+  color: $dt-base_color
+  
+.artical-title,
+.other-blog__title,
+.blog-page__pre-title
+  margin: 0 0 10px
+  color: $blog-title-color
+  font-size: 16px
+  text-transform: uppercase
+
+.blog-page 
+  +clr
+  max-width: 900px
+  padding: 0 0px
+  font-size: 16px
+  p
+    margin-bottom: 20px
+
+.other-blog
+  max-width: 900px
+.blog-page__title
+  margin: 45px 0 75px
+  font-size: 36px
+  color: $blog-title-color
+
+.blog-page__block
+  +clr
+
+.blog-page__image
+  margin-bottom: 45px
+  figcaption
+    text-align: right
+
+.blockquote-separator
+  position: relative
+  height: 1px
+  background: #d0d1d3
+  margin: 40px 0
+  &.blockquote-separator_inverse:after
+    transform: translate(-50%, -50%) rotate(180deg)
+  &:after
+    content: ''
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    display: block
+    width: 29px
+    height: 12px
+    background-image: url('../img/icons.png')
+    background-position: 0px -48px
+.blockquote
+  font-size: 25px
+
+.blog-page
+  .blockquote-author__name,
+  .blockquote-author__proffesion
+    margin: 0 0 3px
+.blockquote-author__name
+  margin: 0 0 3px
+  color: $dark
+  font-size: 16px
+  text-transform: uppercase
+
+.blockquote-author__photo
+  margin-bottom: 6px
+
+.blockquote-author__proffesion 
+  color: $dt-base_color
+
+.blog-page__left
+  width: 220px
+  float: left
+
+.blog-page__right
+  margin: 0 0 0 230px
+  padding-right: 20px
+
+.other-blog
+  padding: 0 10px
+
+.other-blog__inner
+  margin: 0 -10px
+  +clr
+
+.other-blog__item
+  float: left
+  width: 33.33333333%
+  padding: 0 10px
+
+.img_rounded
+  border-radius: 50%
+
+.social-block
+  margin: 70px 0 50px
+  padding: 0 10px
+  max-width: 900px
+@media screen and (max-width: $break-tablet)
+  .massonry__block
+    width: 50%
+  .blog-page__left
+    float: none
+    width: auto
+    margin-bottom: 20px
+  .blog-page__quote
+    .blog-page__left
+      float: left
+      width: 170px
+  .blog-page__right
+    margin-left: 190px
+  .other-blog
+    .other-blog__item:last-child
+      display: none
+  .other-blog__item
+    width: 50%
+@media screen and (max-width: $break-phone)
+  .massonry__block
+    width: 100%
+  .blog-page
+    padding: 0 10px
+  .blog-page__left
+    float: none
+    width: auto
+  .blog-page__right
+    float: none
+    width: auto
+  .other-blog
+    .other-blog__item:last-child
+      display: block
+  .other-blog__item
+    width: auto
+    margin-bottom: 20px
+  .blog-page__left
+    float: none
+    width: auto
+    margin-bottom: 20px
+  .blog-page__quote
+    .blog-page__left
+      float: none
+      width: auto
+      text-align: center
+  .blog-page__right
+    margin-left: 0
+    float: none
+  .blockquote-author__photo img
+    min-width: 280px

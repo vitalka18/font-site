@@ -102,7 +102,7 @@ function homePageSliderInit() {
       autoplay: true,
       autoplaySpeed: 3000,
       asNavFor: '.slider-nav',
-      //adaptiveHeight: true,
+      adaptiveHeight: true,
     });
   }
   
@@ -158,3 +158,26 @@ function responsiveInit() {
   }
 
 }
+
+$( window ).load( function() {
+  var elements = $('.massonry__inner').html();
+  var grid = $('.massonry__inner');
+  grid.masonry({ 
+    itemSelector: '.massonry__block',
+    gutter: 0
+  });
+
+  var win = $(window);
+
+  // Each time the user scrolls
+  win.scroll(function() {
+    // End of the document reached?
+    if ($(document).height() - win.height() == win.scrollTop()) {
+      $('#loading').show();
+      var new_elts = $(elements);
+      var elts = $(new_elts).css('opacity', 0);
+      elts.animate({opacity: 1});
+      grid.append(new_elts).masonry('appended', elts); 
+    }
+  });
+});
