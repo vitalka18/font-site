@@ -181,3 +181,6 @@ $( window ).load( function() {
     }
   });
 });
+if (bowser.safari) {
+  $('body').addClass('safari');
+}

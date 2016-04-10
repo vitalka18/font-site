@@ -4,4 +4,5 @@
 //=include lib/ion.rangeSlider.min.js
 //=include lib/spectrum.js
 //=include lib/massonry.js
+//=include lib/bowser.min.js
 //=include common.js
