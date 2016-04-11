@@ -495,13 +495,13 @@ input[type="checkbox"]:checked + .checkbox:before { width: 8px; height: 8px; }
 
 .other-blog { max-width: 900px; }
 
-.blog-page__title { margin: 45px 0 75px; font-size: 36px; color: #000; }
+.blog-page__title { margin: 45px 0 75px; font-size: 36px; color: #000; font-family: "GillSansC-Bold"; }
 
 .blog-page__block { *zoom: 1; }
 .blog-page__block:after { content: " "; display: table; clear: both; }
 
 .blog-page__image { margin-bottom: 45px; }
-.blog-page__image figcaption { text-align: right; }
+.blog-page__image figcaption { text-align: right; font-family: "GillSansC-Italic"; }
 
 .blockquote-separator { position: relative; height: 1px; background: #d0d1d3; margin: 40px 0; }
 .blockquote-separator.blockquote-separator_inverse:after { -webkit-transform: translate(-50%, -50%) rotate(180deg); -moz-transform: translate(-50%, -50%) rotate(180deg); -ms-transform: translate(-50%, -50%) rotate(180deg); -o-transform: translate(-50%, -50%) rotate(180deg); transform: translate(-50%, -50%) rotate(180deg); }
