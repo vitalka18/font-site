@@ -489,7 +489,7 @@ input[type="checkbox"]:checked + .checkbox:before { width: 8px; height: 8px; }
 
 .artical-title, .other-blog__title, .blog-page__pre-title { margin: 0 0 10px; color: #000; font-size: 16px; text-transform: uppercase; }
 
-.blog-page { *zoom: 1; max-width: 900px; padding: 0 0px; font-size: 16px; }
+.blog-page { *zoom: 1; max-width: 900px; padding: 0 0px; font-size: 16px; font-family: "GillSansLightC"; }
 .blog-page:after { content: " "; display: table; clear: both; }
 .blog-page p { margin-bottom: 20px; }
 
